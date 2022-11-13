@@ -63,7 +63,7 @@ fn main() {
 
                 println!("Raw Data: {:?}", &_result[..t]);
                 for encoder in encodings().into_iter() {
-                    println!("{}: {}", encoder.name(), encoder.decode(&_result, DecoderTrap::Replace).unwrap());
+                    println!("{}: {}", encoder.name(), encoder.decode(&_result, DecoderTrap::Ignore).unwrap());
                  }
                 // println!("Hola: {:?}", chars);
                 // println!("Hola ISO_8859_1: {:?}", _epale_1);
